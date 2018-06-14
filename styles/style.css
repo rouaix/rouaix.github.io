@@ -445,8 +445,9 @@ aside section p a, aside section p a:link, aside section p a:visited{
 }
 
 section#Experiences ul:hover{
-    background-color: rgba(159, 183, 193, 1);
+    /* background-color: rgba(159, 183, 193, 1); */
 }
+
 footer{
     padding:10px;
     text-align:center;
@@ -454,4 +455,19 @@ footer{
 
 #Fleche{
     transform: rotate(-45deg);
+}
+
+.FlecheD{
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);
+    margin: 0 10px 0 10px;
+}
+
+#Competences ul h3{
+    background-color: rgba(52, 73, 85, 0.1);
+}
+
+#Experiences ul h3{
+    background-color: rgba(52, 73, 85, 0.1);
 }
