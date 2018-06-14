@@ -236,10 +236,10 @@ div.Photo:hover {
     filter: saturate(0);
 }
 
-.Loisirs img.zoom {
+.Loisirs img.zoom{
     margin: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 1);
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);*/ 
 }
 
 .Loisirs ul li,
@@ -465,9 +465,9 @@ footer{
 }
 
 #Competences ul h3{
-    background-color: rgba(52, 73, 85, 0.1);
+    background-color: rgba(52, 73, 85, 0.05);
 }
 
 #Experiences ul h3{
-    background-color: rgba(52, 73, 85, 0.1);
+    background-color: rgba(52, 73, 85, 0.05);
 }
