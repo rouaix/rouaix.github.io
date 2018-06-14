@@ -18,7 +18,13 @@
     </head>
     
     <body onload="verifForm(formA)">
-
+        <nav class="FondGris Blanc">
+            <a href="#MeContacter" title="Me Contacter"><img src="./img/bg1400-1.png" width="48" height="48" alt=""/></a>
+            <a href="./img/Curriculum_vitae_Web_Daniel_ROUAIX.pdf" target="_blank" title="Mon CV Pdf"><img src="./img/bg1337-1.png" width="48" height="48" alt=""/></a>
+            <a href="#" title="Mes derniers sites" target=""><img src="./img/bg1004.png" width="48" height="48" alt=""/></a>
+            <a href="https://github.com/rouaix" title="Mon GitHub" target="_blank"><img src="./img/github.png" width="48" height="48" alt=""/></a>
+            <h1 class="site__h1 centre">Curriculum vitae de Daniel ROUAIX</h1>
+        </nav> 
         <header class="site__header">       
             <div id="MeContacter" class="Informations">
                 <div class="row">
@@ -31,11 +37,11 @@
                                 <input class="form-control" type="text" name="prenom" placeholder="Saisir votre prénom" maxlength="250">
                             </div>
                             <div class="form-group">
-                                <label for="nom">Nom: <i>(Saisie obligatoire)</i></label>
+                                <label for="nom">Nom: <em>(Saisie obligatoire)</em></label>
                                 <input class="form-control" type="text" name="nom" placeholder="Saisir votre nom" minlength="2" maxlength="250" required onchange="verifForm(this.form)">
                             </div>
                             <div class="form-group">
-                                <label for="email">Courriel: <i>(Saisie obligatoire)</i></label>
+                                <label for="email">Courriel: <em>(Saisie obligatoire)</em></label>
                                 <input class="form-control" type="email" name="email" placeholder="Saisir votre adresse mail" minlength="4" maxlength="250" required onchange="verifForm(this.form)">
                             </div>
                             <div class="form-group">
@@ -77,156 +83,148 @@
         <main class="site__content">          
             <article class="site__article">                           
                 <div class="bloc">  
-                    
-                    <h1 class="site__h1 centre">Curriculum vitae de Daniel ROUAIX</h1>
-                    <h2 class="site__h2 centre">Poste recherch&eacute;: <span id="Mission">Développeur Web</span></h2>                   
-
-                    <nav>
-                        <a href="#MeContacter" title="Me Contacter"><button type="button" class="btn btn-primary">Me contacter</button></a>
-                        <a href="./img/Curriculum_vitae_Web_Daniel_ROUAIX.pdf" target="_blank" title="Mon CV Pdf"><button type="button" class="btn btn-primary">CV au format "PDF"</button></a>
-                    </nav>  
-                                              
-                    <section id="Experiences">
-                       <h2 class="FondGrisClair Blanc">Exp&eacute;riences</h2>
-                        <div class="">
-                            <h3 class="">2010-2018 [Bio Habitat - Groupe BENETEAU]</h3>
-                            <p>Technicien approvisionneur<br />Key User Dynamics AX<br />Key User Bureautique</p>
-                        </div>
-
-                        <div class="">
-                            <h3 class="">2007-2009 [Favreau S.A.]</h3>
-                            <p>Responsable de magasin (Stock)<br />Technicien informatique</p>
-                        </div>
-
-                        <div class="">
-                            <h3 class="">2003-2007 [Mediapost]</h3>
-                            <p>Responsable de plateforme<br />Organisation des &eacute;quipes<br />Jusqu&apos;&agrave; 45 personnes</p>
-                        </div>
-
-                        <div class="">
-                            <h3 class="">2000-2002 [Espace SFR]</h3>
-                            <p>Manager</p>
-                        </div>
-
-                        <div class="">
-                            <h3 class="">1993-1998 [Fnac]</h3>
-                            <p>Responsable de rayons<br />Vente BtoC</p>
-                        </div>
-
-                        <div class="">
-                            <h3 class="">1990-1992 [Visea Thorn-Emi]</h3>
-                            <p>Responsable de magasin<br />Location BtoB</p>
-                        </div>
-
-                        <div class="">
-                            <h3 class="">1989-1990 [Nasa Electronique]</h3>
-                            <p>Responsable de magasin<br />Vente BtoC</p>
-                        </div>
-
-                        <div class="">
-                            <h3 class="">1987-1990 [Vogica]</h3>
-                            <p>VRP</p>
-                        </div>
-
-                        <div class="">
-                            <h3 class="">1982-1986 [Meunier & Cie "Agent de change"]</h3>
-                            <p>Cotation d'obligations<br />Gestion de portefeuille<br />Bourse de Paris</p>
-                        </div>                    
-                    </section>                                                 
-
+                   
                     <section id="Competences" >
-                        <h2 class="FondGrisClair Blanc">Comp&eacute;tences</h2>
-                        <h3>Points Forts</h3>
+                        <h2 class="FondGrisClair Blanc"><img src="./img/bg1004-9.png" width="32" height="32" alt=""/> Comp&eacute;tences</h2>
+                        
                         <ul>
-                            <li>Forte capacit&eacute; d&apos;adaptation</li>
-                            <li>Polyvalent</li>
-                            <li>Autonome</li>
-                            <li>Curieux</li>
+                            <li><h3>Points Forts</h3></li>
+                            <li><p>Forte capacit&eacute; d&apos;adaptation</p></li>
+                            <li><p>Polyvalent</p></li>
+                            <li><p>Autonome</p></li>
+                            <li><p>Curieux</p></li>
                         </ul>
-                        <h3>D&eacute;veloppement Web</h3>
+                        
                         <ul>
-                            <li><i>Autonome sur</i><br />Php, Mysql, Html, Css, Ftp, Wordpress</li>
-                            <li><i>Apprentissage en cours</i><br />Javascript, JQuery, Bootstrap</li>
+                           <li><h3>D&eacute;veloppement Web</h3></li>
+                            <li><p><em>Autonome sur:</em><br />Php, Mysql, Html, Css, Ftp, Wordpress</p></li>
+                            <li><p><em>Apprentissage en cours de:</em><br />Javascript, JQuery, Bootstrap, Php, Mysql</p></li>
                         </ul>
-                        <h3>Bureautique</h3>
+                        
                         <ul>
-                            <li><i>Tr&egrave;s bonne ma&icirc;trise:</i><br />Microsoft Office, Word, Excel, PowerPoint, Outlook, Erp Microsoft Dynamics AX, Vba pour Office</li>
-                            <li><br/><i>Utilisateur:</i><br />Photoshop, Illustrator, Fireworks, InDesign</li>
+                           <li><h3>Bureautique</h3></li>
+                            <li><p><em>Tr&egrave;s bonne ma&icirc;trise:</em><br />Microsoft Office, Word, Excel, PowerPoint, Outlook, Erp Microsoft Dynamics AX, Vba pour Office</p></li>
+                            <li><p><em>Utilisateur:</em><br />Photoshop, Illustrator, Fireworks, InDesign</p></li>
                         </ul>
-                        <h3>Formation</h3>
+                        
                         <ul>
-                            <li>Formation des utilisateurs</li>
+                           <li><h3>Formation</h3></li>
+                            <li><p>Formation des utilisateurs</p></li>
                             <ul>
-                                <li>Dynamics AX</li>
-                                <li>Microsoft Office</li>
+                                <li><p>Dynamics AX</p></li>
+                                <li><p>Microsoft Office</p></li>
                             </ul>
                         </ul>
-                        <h3>Approvisionnement</h3>
+                        
                         <ul>
-                            <li>Commandes Fournisseurs (10M&euro;)</li>
-                            <li>Gestion des incidents</li>
-                            <li>Back office approvisionnement</li>
-                            <li>Conception et mise &agrave; jour de rapports d&apos;activit&eacute; (Reporting, KPI)</li>
+                           <li><h3>Approvisionnement</h3></li>
+                            <li><p>Commandes Fournisseurs (10M&euro;)</p></li>
+                            <li><p>Gestion des incidents</p></li>
+                            <li><p>Back office approvisionnement</p></li>
+                            <li><p>Conception et mise &agrave; jour de rapports d&apos;activit&eacute; (Reporting, KPI)</p></li>
                         </ul>
-                        <h3>Gestion de stock</h3>
+                        
                         <ul>
-                            <li>Planification des flux</li>
-                            <li>Suivi des inventaires</li>
-                            <li>Planification des transports</li>
+                           <li><h3>Gestion de stock</h3></li>
+                            <li><p>Planification des flux</p></li>
+                            <li><p>Suivi des inventaires</p></li>
+                            <li><p>Planification des transports</p></li>
                         </ul>
-                        <h3>Encadrement</h3>
+                        
                         <ul>
-                            <li>Organisation des &eacute;quipes</li>
-                            <li>Priorisation du travail</li>
-                            <li>Gestion du temps</li>
+                           <li><h3>Encadrement</h3></li>
+                            <li><p>Organisation des &eacute;quipes</p></li>
+                            <li><p>Priorisation du travail</p></li>
+                            <li><p>Gestion du temps</p></li>
                         </ul>
                     </section>  
+                                       
+                    <section id="Experiences">
+                       <h2 class="FondGrisClair Blanc"><img src="./img/bg1541-3.png" width="32" height="32" alt=""/> Exp&eacute;riences</h2>
+                        <ul>
+                            <li><h3 class="">2010-2018 [Bio Habitat - Groupe BENETEAU]</h3></li>
+                            <li><p>Technicien approvisionneur<br />Key User Dynamics AX<br />Key User Bureautique</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3 class="">2007-2009 [Favreau S.A.]</h3></li>
+                            <li><p>Responsable de magasin (Stock)<br />Technicien informatique</p></li>
+                        </ul>    
+                        <ul>
+                            <li><h3 class="">2003-2007 [Mediapost]</h3></li>
+                            <li><p>Responsable de plateforme<br />Organisation des &eacute;quipes<br />Jusqu&apos;&agrave; 45 personnes</p></li>
+                        </ul>    
+                        <ul>
+                            <li><h3 class="">2000-2002 [Espace SFR]</h3></li>
+                            <li><p>Manager</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3 class="">1993-1998 [Fnac]</h3></li>
+                            <li><p>Responsable de rayons<br />Vente BtoC</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3 class="">1990-1992 [Visea Thorn-Emi]</h3></li>
+                            <li><p>Responsable de magasin<br />Location BtoB</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3 class="">1989-1990 [Nasa Electronique]</h3></li>
+                            <li><p>Responsable de magasin<br />Vente BtoC</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3 class="">1987-1990 [Vogica]</h3></li>
+                            <li><p>VRP</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3 class="">1982-1986 [Meunier & Cie "Agent de change"]</h3></li>
+                            <li><p>Cotation d'obligations<br />Gestion de portefeuille<br />Bourse de Paris</p></li>
+                        </ul>                  
+                    </section>                                                 
                 </div>                  
             </article>
             <aside class="FondGris site__aside">
                <div class="bloc">
-                   
+                    <h2 class="site__h2 centre Blanc">Poste recherch&eacute;: <span id="Mission">Développeur Web</span></h2>                   
                     <section id="Nom" Class="Blanc">
-                        <h2 class="Blanc FondGrisFonce">Daniel ROUAIX</h2>
-                        <img class="Photo" src="./img/Photo_Daniel.jpg" width="130"/>
-                        <p style="margin-left:30px;">32 Avenue Paul SIRVENT
+                        <h2 class="Blanc FondGrisFonce"><img src="./img/bg1472-3.png" width="32" height="32" alt=""/> Daniel ROUAIX</h2>
+                        <img class="Photo" src="./img/Photo_Daniel.jpg" width="160" style="margin-top:1em;"/>
+                        <p style="margin-left:30px;"><br />32 Avenue Paul SIRVENT
                             <br />13380 Plan de Cuques
-                            <br /><br />T&eacute;l&eacute;phone: <a href="tel:0613835865" title="Téléphone">06 13 83 58 65</a>
-                            <br />Mail:<a href="mailto:daniel@rouaix.com" title="Pour m&apos;envoyer un mail, cliquez ici !"> daniel@rouaix.com</a>
-                            <br /><br />N&eacute; le 25/10/1962 &agrave; St Rapha&euml;l (Var)
+                            <br /><br /><a href="tel:0613835865" title="Téléphone"><img src="./img/bg1676-8.png" width="18" height="18" alt=""/> 06 13 83 58 65</a>
+                            <br /><a href="mailto:daniel@rouaix.com" title="Pour m&apos;envoyer un courriel, cliquez ici !"><img src="./img/bg1604-91.png" width="18" height="18" alt=""/> daniel@rouaix.com</a>
+                            <br /><br />N&eacute; &agrave; St Rapha&euml;l (Var)
                             <br />Nationalit&eacute; Fran&ccedil;aise
                             <br />
                             <br />Permis A, B, Bateau (c&ocirc;tier)</p>
                     </section>     
                     
                     <section id="Formations" Class="Blanc">
-                        <h2 class="Blanc FondGrisFonce">Etudes et formations</h2>
+                        <h2 class="Blanc FondGrisFonce"><img src="./img/bg1337-1.png" width="32" height="32" alt=""/>  Etudes et formations</h2>
                         <ul>
-                            <li><strong>2018 Simplon</strong><br />Développement d'une application Web<br />Html, Css, Javascript (JQuery, Bootstrap), Php, Mysql<br />Marseille</li>
-                            <br/>
-                            <li><strong>2005 Mediapost</strong><br />Management op&eacute;rationnel<br />Toulon</li>
-                            <br />
-                            <li><strong>1993 Fnac</strong><br />Vente en r&eacute;ception d&apos;appels<br />Angers</li>
-                            <br />
-                            <li><strong>1988 Vogica</strong><br />Vente directe<br />Amiens</li>
-                            <br />
-                            <li><strong>1984-1986 Compagnie des Agents de Change</strong><br />Brevet de Banque<br />Cours du soir<br />Paris</li>
-                            <br />
-                            <li><strong>1982-1984 Compagnie des Agents de Change</strong><br />CAP Bourse<br />Cours du soir<br />Paris</li>
-                            <br />
-                            <li><strong>1980 Lyc&eacute;e de Chelles</strong><br />Niveau BAC Economique et social</li>
+                            <li><h3>2018 Simplon</h3><p>Développement d'une application Web<br />Html, Css, Javascript (JQuery, Bootstrap), Php, Mysql<br />Marseille</p></li>
+
+                            <li><h3>2005 Mediapost</h3><p>Management op&eacute;rationnel<br />Toulon</p></li>
+
+                            <li><h3>1993 Fnac</h3><p>Vente en r&eacute;ception d&apos;appels<br />Angers</p></li>
+
+                            <li><h3>1988 Vogica</h3><p>Vente directe<br />Amiens</p></li>
+
+                            <li><h3>1984-1986 CAC<br />Compagnie des Agents de Change</h3><p>Brevet de Banque<br />Cours du soir<br />Paris</p></li>
+
+                            <li><h3>1982-1984 CAC<br />Compagnie des Agents de Change</h3><p>CAP Bourse<br />Cours du soir<br />Paris</p></li>
+
+                            <li><h3>1980 Lyc&eacute;e de Chelles</h3><p>Niveau BAC Economique et social</p></li>
                         </ul>
                     </section>  
                                             
                     <section class="Loisirs Blanc">
-                        <h2 Class="FondGrisFonce Blanc">Loisirs</h2>
+                        <h2 Class="FondGrisFonce Blanc"><img src="./img/bg935-6.png" width="32" height="32" alt=""/> Loisirs</h2>
                         <div class="bloc">
                         <ul>
-                            <li>Infographie<br /><img src="./img/infographie.jpg" alt="" class="" width="200"/></li>
-                            <br />
-                            <li>Peinture<br /><img src="./img/pochoir_004.jpg" alt="" class=""  width="200"/></li>
-                            <br />
-                            <li>Marche<br /><img src="./img/CA-wp6.jpg" alt="" class=""  width="200"/></li>
+                            <li><h3>Infographie</h3></li>
+                            <li><img src="./img/infographie.jpg" alt="" class="" width="90%"/></li>
+                            <li><h3>Peinture</h3></li>
+                            <li><img src="./img/pochoir_004.jpg" alt="" class=""  width="90%"/></li>
+                            <li><h3>Marche</h3></li>
+                            <li><img src="./img/CA-wp6.jpg" alt="" class=""  width="90%"/></li>
                         </ul>
                         </div>
                     </section>  
