@@ -447,3 +447,11 @@ aside section p a, aside section p a:link, aside section p a:visited{
 section#Experiences ul:hover{
     background-color: rgba(159, 183, 193, 1);
 }
+footer{
+    padding:10px;
+    text-align:center;
+}
+
+#Fleche{
+    transform: rotate(-45deg);
+}
