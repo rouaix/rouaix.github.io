@@ -6,17 +6,18 @@
 * {
     font-family: Lato, Open Sans, Arial;
     box-sizing: border-box;
-    line-height:1.6em;
+    line-height: 1.6em;
 }
 
 html {
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: block;
     overflow-x: hidden;
-    
+
     width: 100%;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 1);
@@ -35,11 +36,11 @@ nav {
     background-color: transparent;
     overflow: hidden;
     clear: both;
-    text-align:left;
+    text-align: left;
 }
 
 nav img {
-    margin:10px;
+    margin: 10px;
     float: left;
 }
 
@@ -49,7 +50,7 @@ header {
 }
 
 main {
-    display:table;    
+    display: table;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -58,26 +59,31 @@ main {
 }
 
 article {
-    display:table-cell;
-    width: 70%; height: 100%;
+    display: table-cell;
+    width: 70%;
+    height: 100%;
     min-width: 450px;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 aside {
-    display:table-cell;
-    width: 30%; height: 100%; 
+    display: table-cell;
+    width: 30%;
+    height: 100%;
     min-width: 350px;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 section {
-    display:block;
-    width:100%;
-    overflow:hidden;
-    
+    display: block;
     width: 100%;
-    margin: 0; padding: 0 0 10px 0 ;
+    overflow: hidden;
+
+    width: 100%;
+    margin: 0;
+    padding: 0 0 10px 0;
     clear: both;
 }
 
@@ -98,7 +104,7 @@ h4,
 h5,
 h6 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    margin:0;
+    margin: 0;
     padding: 10px 0;
 }
 
@@ -133,7 +139,10 @@ h6 {
     font-weight: 500;
 }
 
-h1 img, h2 img{margin:5px 10px 5px 10px;}
+h1 img,
+h2 img {
+    margin: 5px 10px 5px 10px;
+}
 
 a,
 a:link,
@@ -143,8 +152,9 @@ a:hover {
     text-decoration: none;
 }
 
-ul{
-    margin:0; padding:0;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -158,8 +168,8 @@ p {
     padding: 0 10px 0 10px;
 }
 
-em{
-    font-weight:550;
+em {
+    font-weight: 550;
 }
 
 div.Informations {
@@ -221,11 +231,11 @@ section.Photo {
     overflow: hidden;
 }
 
-img.Photo{
-    float:right;
+img.Photo {
+    float: right;
     margin: 10px 40px 10px 10px;
     filter: saturate(1);
-    border: 1px solid rgba(0,0,0,1);
+    border: 1px solid rgba(0, 0, 0, 1);
     border-radius: 15px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -236,10 +246,10 @@ div.Photo:hover {
     filter: saturate(0);
 }
 
-.Loisirs img.zoom{
+.Loisirs img.zoom {
     margin: 5px;
     border: 1px solid rgba(0, 0, 0, 1);
-    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);*/ 
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);*/
 }
 
 .Loisirs ul li,
@@ -320,22 +330,26 @@ div.Photo:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.FondOrange{
+.FondOrange {
     background-color: rgba(249, 170, 51, 1);
 }
 
-.FondGrisFonce{
+.FondGrisFonce {
     background-color: rgba(35, 47, 52, 1);
 }
+
 .FondGris {
     background-color: rgba(52, 73, 85, 1);
 }
-.FondGrisClair{
+
+.FondGrisClair {
     background-color: rgba(74, 101, 114, 1);
 }
-.FondGrisTresClair{
+
+.FondGrisTresClair {
     background-color: rgba(159, 183, 193, 1);
 }
+
 .FondBlanc {
     background-color: rgba(255, 255, 255, 1);
 }
@@ -380,36 +394,48 @@ form i {
 
 .clearfix:after {
     content: "\0020";
-    display: block; 
-    height: 0; 
-    clear: both; 
+    display: block;
+    height: 0;
+    clear: both;
     visibility: hidden;
     overflow: hidden;
 }
-.clearfix { display: inline-table; }
+
+.clearfix {
+    display: inline-table;
+}
 
 /* Hides from IE-mac \*/
-.clearfix { height: 1%; }
-.clearfix { display: block; }
+
+.clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
 /* End hide from IE-mac */
 
-.bloc{
+.bloc {
     display: block;
     overflow: hidden;
     width: 100%;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-.Loisirs ul li{
+.Loisirs ul li {
     display: block;
     overflow: hidden;
 }
 
-.right {float: right;}
+.right {
+    float: right;
+}
 
 .site__header {
-  -webkit-animation: bounceInUp 1s;
+    -webkit-animation: bounceInUp 1s;
 }
 
 .site__content {
@@ -420,54 +446,77 @@ form i {
 }
 
 .site__article {
-  -webkit-animation: bounceInUp 3s;
-  -webkit-animation-delay: 0s;
+    -webkit-animation: bounceInUp 3s;
+    -webkit-animation-delay: 0s;
 }
 
 .site__aside {
-  -webkit-animation: bounceInUp 1.5s;
-  -webkit-animation-delay: 0s;
+    -webkit-animation: bounceInUp 1.5s;
+    -webkit-animation-delay: 0s;
 }
 
-.site__h1{
-  -webkit-animation: bounceInDown 3s;
-  -webkit-animation-delay: 0.1s;    
+.site__h1 {
+    -webkit-animation: bounceInDown 3s;
+    -webkit-animation-delay: 0.1s;
 }
 
-.site__h2{
-  -webkit-animation: bounceInDown 6s;
-  -webkit-animation-delay: 0.1s;    
+.site__h2 {
+    -webkit-animation: bounceInDown 6s;
+    -webkit-animation-delay: 0.1s;
 }
 
-aside section p a, aside section p a:link, aside section p a:visited{
-    text-decoration : none;
-    color: rgba(255,255,255,1);
+aside section p a,
+aside section p a:link,
+aside section p a:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
 }
 
-section#Experiences ul:hover{
+section#Experiences ul:hover {
     /* background-color: rgba(159, 183, 193, 1); */
 }
 
-footer{
-    padding:10px;
-    text-align:center;
+footer {
+    padding: 10px;
+    text-align: center;
 }
 
-#Fleche{
+#Fleche {
     transform: rotate(-45deg);
 }
 
-.FlecheD{
+.FlecheD {
     width: 24px;
     height: 24px;
     transform: rotate(45deg);
     margin: 0 10px 0 10px;
 }
 
-#Competences ul h3{
+#Competences ul h3 {
     background-color: rgba(52, 73, 85, 0.05);
 }
 
-#Experiences ul h3{
+#Experiences ul h3 {
     background-color: rgba(52, 73, 85, 0.05);
+}
+
+.popup {
+    background-color(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logos{
+    margin:5px;
+    width:32px;
+    height:32px;
 }
