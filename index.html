@@ -110,26 +110,27 @@
                         <li>
                             <p><em>Autonome sur:</em><br />Php, Mysql, Html, Css, Ftp, Wordpress</p>
                             <p>
-                            <img src="./img/php.png" alt="" class="logos" />
-                            <img src="./img/sql.png" alt="" class="logos" />
-                            <img src="./img/html5.png" alt="" class="logos" />
-                            <img src="./img/css3.png" alt="" class="logos" />
-                            <img src="./img/ftp.png" alt="" class="logos" />
-                            <img src="./img/wordpress.png" alt="" class="logos" />
+                                <img src="./img/php.png" alt="" class="logos" onmouseover="languages('php');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/sql.png" alt="" class="logos" onmouseover="languages('sql');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/html5.png" alt="" class="logos" onmouseover="languages('html');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/css3.png" alt="" class="logos" onmouseover="languages('css');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/ftp.png" alt="" class="logos" onmouseover="languages('ftp');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/wordpress.png" alt="" class="logos" onmouseover="languages('wordpress');" onmouseout="LanguagesFerme();" />
                             </p>
+                            
                         </li>
                         <li>
-                            <p><em>Apprentissage en cours de:</em><br />Javascript, JQuery, Bootstrap, Php, Mysql</p>
+                            <p><em>Apprentissage en cours de:</em><br />Javascript, JQuery, Bootstrap, Php, Mysql, MVC (Modèle-vue-contrôleur)</p>
                             <p>
-                                <img src="./img/javascript.png" alt="" class="logos" />
-                                <img src="./img/jquery.png" alt="" class="logos" />
-                                <img src="./img/bootstrap.jpg" alt="" class="logos" />
-                                <img src="./img/php.png" alt="" class="logos" />
-                                <img src="./img/sql.png" alt="" class="logos" />
+                                <img src="./img/javascript.png" alt="" class="logos" onmouseover="languages('javascript');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/jquery.png" alt="" class="logos" onmouseover="languages('jquery');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/bootstrap.jpg" alt="" class="logos" onmouseover="languages('bootstrap');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/php.png" alt="" class="logos" onmouseover="languages('php');" onmouseout="LanguagesFerme();" />
+                                <img src="./img/sql.png" alt="" class="logos" onmouseover="languages('sql');" onmouseout="LanguagesFerme();" />
                             </p>
                         </li>
                     </ul>
-
+<div id="autonomie"></div>
                     <ul>
                         <h3><img src="./img/g854.png" alt="" class="FlecheD" />Bureautique</h3>
                         <li>
@@ -329,7 +330,9 @@
                     <h2 Class="FondGrisFonce Blanc"><img src="./img/bg935-6.png" width="32" height="32" alt="" /> Loisirs</h2>
                     <div class="bloc">
                         <ul>
-                            <li><h3>Infographie</h3></li>
+                            <li>
+                                <h3>Infographie</h3>
+                            </li>
                             <li><a href="#pop"><img src="./img/infographie.jpg" alt="" class="zoom" width="90%" onclick="PopupImage('./img/infographie.jpg');"/></a></li>
                             <li>
                                 <h3>Peinture</h3>
@@ -361,14 +364,67 @@
         }
 
     </script>
-    <SCRIPT LANGUAGE="JavaScript">
+    <script LANGUAGE="JavaScript">
         function PopupImage(img) {
             document.getElementById("pop").style.visibility = "visible";
             document.getElementById('pop').innerHTML = "<img src='" + img + "' alt='' title='' width='100%'/>";
         }
+
         function PopupFerme() {
             document.getElementById("pop").style.visibility = "hidden";
         }
+
+    </script>
+    <script LANGUAGE="JavaScript">
+        function languages(choix) {
+            var letexte = "";
+
+            switch (choix) {
+                case 'html':
+                    letexte = "Bonnes connaissances du Html5.<br />SEO (Gestion du référencement de plusieurs sites Wordpress.)";
+                    break;
+                case 'css':
+                    letexte = "Bonnes connaissances des sélecteurs, pseudo-classes, sélecteurs avancés, media queries et des animations.";
+                    break;
+                case 'ftp':
+                    letexte = "Usage régulier du Ftp avec le client FileZilla.";
+                    break;
+                case 'wordpress':
+                    letexte = "Réalisation et gestion de plusieurs sites sous Wordpress.";
+                    break;      
+                case 'javascript':
+                    letexte = "Perfectionnement en cours de mes connaissances en Javascript chez Simplon.";
+                    break;                      
+                case 'jquery':
+                    letexte = "Apprentissage en cours de jQuery chez Simplon.";
+                    break;     
+                case 'bootstrap':
+                    letexte = "Apprentissage en cours de Bootstrap chez Simplon.";
+                    break;
+                case 'php':
+                    letexte = "Autonome avec le langage Php.<br />Perfectionnement en cours sur la POO.";
+                    break;                    
+                case 'sql':
+                    letexte = "Autonome avec MySql.<br />Perfectionnement en cours sur les bases SQL.";
+                    break;                    
+                case 'angular':
+                    letexte = "";
+                    break;                    
+                case 'symfony':
+                    letexte = "";
+                    break;                     
+                default:
+                    letexte = "";
+            }
+
+            document.getElementById("autonomie").style.display = "block";
+            document.getElementById("autonomie").innerHTML = "<p><strong>" + letexte + "</strong></p>";
+        }
+
+        function LanguagesFerme() {
+            document.getElementById("autonomie").style.display = "none";
+        }
+
     </script>
 </body>
 
